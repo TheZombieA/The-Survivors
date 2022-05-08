@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #007AF3;
+}
+body{
+    background: #F2F2F2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+
+.navbar{
+    background: white;
+    padding: 1em;
+
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+    position: relative;
+    right: 10px;
+    text-align: center;
+
+    span{
+        color: var(--primary-color);
+    }
+}
+nav{
+    display: none;
+}
+
+.container{
+    display: flex;
+    place-content: space-between;
+}
+
+.mobile-menu{
+    cursor: pointer;
+}
+}
+
+a{
+    color: #444444;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+section{
+    padding: 5em 2em;
+}
+.hero{
+    text-align: center;
+}
+
+.left-col{
+    .subhead{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;
+        letter-spacing: .3em;
+        text-align: center;
+        position: relative;
+        
+    }
+
+    h1{
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+        text-align: center;
+        position: relative;
+        left: 5px;
+        margin: 2em;
+    }
+.Chap2Story{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .primary-cta{
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.4em;
+        border-radius: 5em;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .watch-video-cta{
+        display: block;
+        margin-top: 1em;
+        
+
+        img{
+            margin-right: .5em;
+        }
+    }
+}
+
+.hero-img{
+    width: 70%;
+    margin-top: 3em;
+}
+
+section.characters{
+    background: #20272E;
+    color: white;
+
+}
+
+ul.character-list{
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before{
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+nav.menu-btn{
+    display: block;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+
+
+    ul.primary-nav{
+        margin-top: 5em;
+    }
+
+    li{
+
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    
+    }
+}
+
+.mobile-menu-exit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+article{
+    width: clamp(200px, 50%, 600px );
+    
+    }
